@@ -16,6 +16,38 @@ h3, h4 {
   font-weight: 600;
 }
 
+.main {
+  display: none;
+}
+
+/* Loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3e3655;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Header */
 nav.navbar-dark {
   background-color: transparent;
@@ -40,7 +72,7 @@ nav.nav-sticky {
 
 /* Banner */
 .banner {
-  background: url('../img/banner.png');
+  background: url('../img/banner-min.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
