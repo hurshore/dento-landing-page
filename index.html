@@ -17,6 +17,7 @@
       }
     })
   </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <!-- Loader -->
@@ -55,8 +56,8 @@
 
       <!-- Banner -->
     <div class="banner">
-      <div class="banner-content container-fluid">
-        <div class="inner-content container">
+      <div class="banner-content container-fluid overflow-hidden">
+        <div class="inner-content container" data-aos="fade-up">
           <h1>YOUR TEETH IS SAFE UNDER OUR CARE</h1>
           <p>Dento is a dentistry company that helps you treat your teeth and other mouth related problems</p>
           <button class="btn appoint-btn">Book an appointment</button>
@@ -67,11 +68,11 @@
     <!-- section 1 -->
     <div class="section-1 text-center">
       <div class="container">
-        <div class="row">
+        <div class="row overflow-hidden">
           <div class="col-md-6 p-0">
             <img src="./img/image-1-min.png" alt="">
           </div>
-          <div class="col-md-6 mt-3">
+          <div class="col-md-6 mt-3" data-aos="fade-left">
             <h3>About Us</h3>
             <p>Dentists remove tooth decay, fill cavities, and repair fractured teeth. Dentists diagnose and treat problems with patients' teeth, gums and related parts of the mouth. They provide advice and instruction on taking care of the teeth and gums and on diet choices that affect oral health.</p>
             <p>Dentists remove tooth decay, fill cavities, and repair fractured teeth. Dentists diagnose and treat problems with patients' teeth, gums and related parts of the mouth. They provide advice and instruction on taking care of the teeth and gums and on diet choices that affect oral health.</p>
@@ -83,11 +84,11 @@
     <!-- section 2 -->
     <div class="section-2 mt-4">
       <div class="container">
-        <div class="row">
+        <div class="row overflow-hidden">
           <div class="col-md-6">
             <img src="./img/image-2-min.png" alt="">
           </div>
-          <div class="col-md-6 services">
+          <div class="col-md-6 services" data-aos="fade-right">
             <h3>Our services</h3>
               <p><span class="check"><img src="./img/icons/check.png"></span> We treat problems with tooth, gums and decays</p>
               <p><span class="check"><img src="./img/icons/check.png"></span> We shine and clean dirty tooth to perfection</p>
@@ -102,8 +103,8 @@
     <!-- section 3 -->
     <div class="section-3 text-center pt-5 pb-5 mt-4">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row overflow-hidden">
+          <div class="col-md-6" data-aos="fade-right">
             <h3>Listen to what some patients are saying</h3>
             <p>See how well Dento will take care of you</p>
             <a href="">
@@ -121,8 +122,8 @@
     <!-- section 4 -->
     <div class="section-4 mt-4 text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row overflow-hidden">
+          <div class="col-md-6" data-aos="fade-left">
             <p class="heading">Still having tooth issues? No problem</p>
             <h4>We'll make sure you're done with that ache.</h4>
             <p>Dentists remove tooth decay, fill cavities, and repair fractured teeth. Dentists diagnose and treat problems with patients' teeth, gums, and related parts of the mouth.</p>
@@ -138,7 +139,7 @@
     </div>
 
     <!-- section 5 -->
-    <div class="section-5 mt-5 text-center">
+    <div class="section-5 mt-5 text-center" data-aos="fade-right">
       <div class="container">
         <h4>Sign up for our newsletters to get notified on our exclusive offers?</h4>
         <form>
@@ -186,6 +187,13 @@
     </Footer>
   </div>
 
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="./js/app.js"></script>
